@@ -1,230 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bonos de carbono para predios | CO₂ KUALTA</title>
+  <meta charset="UTF-8">
+  <title>Bonos de Carbono para Predios | CO₂ KUALTA</title>
+  <meta name="description" content="Estructuración de proyectos de bonos de carbono para predios y propietarios: diagnóstico, ruta MRV y acompañamiento técnico real.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="Servicio estrella CO₂ KUALTA: estructuración de proyectos de bonos de carbono para predios. Diagnóstico, ruta técnica, jurídica y plan de escalamiento." />
-  <meta name="theme-color" content="#0b3d2e" />
-  <link rel="canonical" href="./bonos.html" />
-
-  <meta property="og:title" content="Bonos de carbono para predios | CO₂ KUALTA" />
-  <meta property="og:description" content="Diagnóstico, elegibilidad y ruta completa para entrar al mercado de carbono con tu predio." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="./images/og-co2kualta.jpg" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="./styles.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <a class="skip" href="#contenido">Saltar al contenido</a>
-  <div class="topbar" aria-hidden="true"><div class="topbar__fill" id="scrollProgress"></div></div>
 
-  <header class="nav">
-    <div class="container nav__inner">
-      <a class="brand" href="./">
-        <img src="./images/logo-co2kualta.png" alt="CO₂ KUALTA" class="brand__logo" />
-        <span class="brand__name">CO₂ KUALTA</span>
-      </a>
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="./index.html">
+      <img src="./images/logo-co2kualta.png" class="logo" alt="CO₂ KUALTA">
+    </a>
+    <nav>
+      <a href="./index.html#servicios">Servicios</a>
+      <a href="./index.html#proceso">Proceso</a>
+      <a href="./index.html#faq">FAQ</a>
+      <a href="./index.html#contacto" class="btn-sm">Contacto</a>
+    </nav>
+  </div>
+</header>
 
-      <nav class="nav__links" aria-label="Navegación principal">
-        <a href="./#servicios">Servicios</a>
-        <a class="is-active" href="./bonos.html">Bonos de carbono</a>
-        <a href="./#impacto">Impacto</a>
-        <a href="./#contacto" class="btn btn--sm">Cotizar</a>
-      </nav>
+<!-- HERO -->
+<section class="hero" style="background:
+  linear-gradient(rgba(15,61,46,.7),rgba(15,61,46,.7)),
+  url('./images/hero-bosque.jpg') center/cover no-repeat;">
+  <div class="hero-content reveal">
+    <h1>Bonos de Carbono para Predios y Propietarios</h1>
+    <p>Estructuramos proyectos reales, con criterio técnico, trazabilidad y acompañamiento completo.</p>
+    <a href="./index.html#contacto" class="btn">Evaluar mi predio</a>
+  </div>
+</section>
 
-      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+<!-- SOBRE EL SERVICIO -->
+<section class="section">
+  <div class="container">
+    <h2 class="reveal">¿En qué consiste este servicio?</h2>
+    <p class="reveal" style="max-width:780px">
+      Analizamos el potencial de tu predio para generar bonos de carbono, identificando viabilidad ambiental,
+      riesgos, requisitos y la mejor ruta técnica posible. No prometemos ingresos irreales: diseñamos
+      proyectos sostenibles y defendibles en el tiempo.
+    </p>
 
-    <div class="nav__mobile" id="navMobile" hidden>
-      <a href="./#servicios">Servicios</a>
-      <a href="./bonos.html">Bonos de carbono</a>
-      <a href="./#impacto">Impacto</a>
-      <a href="./#contacto" class="btn btn--sm btn--block">Cotizar</a>
-    </div>
-  </header>
-
-  <main id="contenido">
-    <section class="hero hero--small">
-      <div class="container hero__grid">
-        <div class="hero__copy">
-          <div class="pill reveal"><span class="dot"></span> Servicio estrella</div>
-          <h1 class="reveal">Bonos de carbono para predios</h1>
-          <p class="lead reveal">
-            Estructuramos tu proyecto con orden: diagnóstico de elegibilidad, ruta técnica + jurídica
-            y una estrategia de escalamiento para vender créditos de carbono cuando aplique.
-          </p>
-
-          <div class="hero__cta reveal">
-            <a class="btn" href="./#contacto">Quiero evaluación</a>
-            <a class="btn btn--ghost" href="./">Volver al inicio</a>
-          </div>
-        </div>
-
-        <div class="hero__visual reveal">
-          <div class="glass">
-            <div class="glass__bg" aria-hidden="true"></div>
-            <img src="./images/campo-2.jpg" alt="Bosque con árboles de gran porte" class="hero__img" />
-          </div>
-          <div class="metric metric--a">
-            <div class="metric__num">Paso 1</div>
-            <div class="metric__txt">Elegibilidad del predio</div>
-          </div>
-          <div class="metric metric--b">
-            <div class="metric__num">Paso 2</div>
-            <div class="metric__txt">Ruta técnica y jurídica</div>
-          </div>
-        </div>
+    <div class="cards">
+      <div class="card reveal">
+        <h3>Diagnóstico inicial</h3>
+        <p>Revisión del predio, cobertura vegetal, ubicación y antecedentes de uso del suelo.</p>
       </div>
-      <div class="hero__fade" aria-hidden="true"></div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="grid2">
-          <div class="reveal">
-            <h2>¿Qué entregamos?</h2>
-            <p class="muted">
-              Un paquete estructurado para tomar decisiones: si el predio no aplica, se dice con claridad.
-              Si aplica, se define un camino realista con etapas y responsables.
-            </p>
-
-            <div class="steps">
-              <div class="step">
-                <div class="step__n">1</div>
-                <div>
-                  <div class="step__t">Diagnóstico y pre-elegibilidad</div>
-                  <div class="step__d">Ubicación, cobertura, uso del suelo, presión de deforestación, accesos, evidencias y riesgos.</div>
-                </div>
-              </div>
-              <div class="step">
-                <div class="step__n">2</div>
-                <div>
-                  <div class="step__t">Ruta técnica (MRV)</div>
-                  <div class="step__d">Variables de línea base, plan de monitoreo, evidencia de campo y estructura de reportes.</div>
-                </div>
-              </div>
-              <div class="step">
-                <div class="step__n">3</div>
-                <div>
-                  <div class="step__t">Ruta jurídica y acuerdos</div>
-                  <div class="step__d">Alineación con propiedad/tenencia, roles, distribución, y compromisos de permanencia.</div>
-                </div>
-              </div>
-              <div class="step">
-                <div class="step__n">4</div>
-                <div>
-                  <div class="step__t">Plan de escalamiento</div>
-                  <div class="step__d">Estrategia para crecer de un predio a un portafolio (comunidad / región) y aumentar hectáreas.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <aside class="panel reveal">
-            <h3>Datos mínimos para evaluar</h3>
-            <ul class="list">
-              <li>Ubicación (vereda/municipio) y coordenadas</li>
-              <li>Área (ha) y tipo de cobertura (bosque / potreros / cultivos)</li>
-              <li>Documento del predio (si aplica)</li>
-              <li>Fotos o video del sitio</li>
-              <li>Historia de uso del suelo (últimos años)</li>
-            </ul>
-
-            <div class="panel__cta">
-              <a class="btn btn--sm btn--block" href="./#contacto">Enviar datos</a>
-              <a class="btn btn--sm btn--ghost btn--block" href="https://checkout.wompi.co/" target="_blank" rel="noopener">Pagar diagnóstico (Wompi)</a>
-              <small class="hint">* Reemplaza el link del pago por el tuyo real.</small>
-            </div>
-          </aside>
-        </div>
+      <div class="card reveal">
+        <h3>Ruta técnica y MRV</h3>
+        <p>Definimos monitoreo, reporte y verificación conforme a estándares aplicables.</p>
       </div>
-    </section>
-
-    <section class="section section--alt">
-      <div class="container">
-        <div class="section__head">
-          <h2 class="reveal">Preguntas frecuentes</h2>
-          <p class="reveal">Respuestas claras, sin letra pequeña.</p>
-        </div>
-
-        <div class="faq">
-          <details class="faq__item reveal">
-            <summary>¿Cuánto se demora un proyecto de bonos?</summary>
-            <p class="muted">Depende del tipo de proyecto y del estándar/registro. Lo importante es iniciar con diagnóstico real y un plan de datos (MRV) consistente.</p>
-          </details>
-          <details class="faq__item reveal">
-            <summary>¿Quién recibe el dinero de la venta de créditos?</summary>
-            <p class="muted">Se define en acuerdos: propietario, operador del proyecto y aliados. Nosotros ayudamos a estructurar un esquema transparente y viable.</p>
-          </details>
-          <details class="faq__item reveal">
-            <summary>¿Qué pasa si mi predio no aplica?</summary>
-            <p class="muted">Se entrega un informe de no-elegibilidad con recomendaciones. A veces aplica un enfoque diferente (restauración, agroforestería, conservación parcial).</p>
-          </details>
-        </div>
+      <div class="card reveal">
+        <h3>Acompañamiento</h3>
+        <p>Te guiamos paso a paso durante la estructuración y toma de decisiones.</p>
       </div>
-    </section>
-
-    <section class="strip">
-      <div class="container strip__inner reveal">
-        <div>
-          <h3>Empecemos con el diagnóstico</h3>
-          <p class="muted">Te guiamos para reunir la info mínima y avanzar rápido.</p>
-        </div>
-        <a class="btn" href="./#contacto">Abrir formulario</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__grid">
-      <div>
-        <div class="footer__brand">
-          <img src="./images/logo-co2kualta.png" alt="CO₂ KUALTA" />
-          <div>
-            <strong>CO₂ KUALTA</strong>
-            <div class="muted">Desde la raíz, tejemos el futuro del planeta</div>
-          </div>
-        </div>
-        <p class="muted footer__small">© <span id="year"></span> CO₂ KUALTA.</p>
-      </div>
-
-      <div class="footer__links">
-        <a href="./">Inicio</a>
-        <a href="./#contacto">Cotizar</a>
-        <a href="./#pagos">Pagos</a>
-      </div>
-    </div>
-  </footer>
-
-  <a class="wa" id="waFloat" href="#" aria-label="Hablar por WhatsApp">
-    <span class="wa__dot"></span>
-    WhatsApp
-  </a>
-
-  <div class="modal" id="exitModal" aria-hidden="true" role="dialog" aria-label="Guía gratuita">
-    <div class="modal__backdrop" data-close="true"></div>
-    <div class="modal__panel" role="document">
-      <button class="modal__close" data-close="true" aria-label="Cerrar">✕</button>
-      <div class="modal__badge">Guía gratis</div>
-      <h3>Checklist: ¿Tu predio puede generar bonos de carbono?</h3>
-      <p class="muted">Descárgala y te decimos el siguiente paso en WhatsApp.</p>
-      <div class="modal__actions">
-        <button class="btn" id="modalDownload">Descargar ahora</button>
-        <button class="btn btn--ghost" data-close="true">Ahora no</button>
-      </div>
-      <small class="hint">* Archivo PDF de ejemplo incluido. Puedes reemplazarlo.</small>
     </div>
   </div>
+</section>
 
-  <script src="./script.js"></script>
+<!-- PROCESO -->
+<section class="section alt">
+  <div class="container">
+    <h2 class="reveal">Nuestro proceso</h2>
+    <ol class="steps">
+      <li class="reveal">Recolección de información básica del predio</li>
+      <li class="reveal">Evaluación de elegibilidad y riesgos</li>
+      <li class="reveal">Definición de ruta MRV y modelo del proyecto</li>
+      <li class="reveal">Acompañamiento en implementación y seguimiento</li>
+    </ol>
+  </div>
+</section>
+
+<!-- DIFERENCIADORES -->
+<section class="section">
+  <div class="container">
+    <h2 class="reveal">¿Por qué hacerlo con CO₂ KUALTA?</h2>
+    <div class="cards">
+      <div class="card reveal">
+        <h3>Trabajo en territorio</h3>
+        <p>No operamos desde escritorio: entendemos el contexto real de cada predio.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Transparencia</h3>
+        <p>Sin promesas infladas ni cifras engañosas. Claridad desde el inicio.</p>
+      </div>
+      <div class="card reveal">
+        <h3>Visión de largo plazo</h3>
+        <p>Proyectos pensados para sostenerse técnica y ambientalmente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section alt">
+  <div class="container" style="text-align:center">
+    <h2 class="reveal">¿Quieres saber si tu predio puede aplicar?</h2>
+    <p class="reveal">Escríbenos y hacemos una evaluación inicial.</p>
+    <a href="https://wa.me/573116608217" target="_blank" class="btn reveal">Hablar por WhatsApp</a>
+  </div>
+</section>
+
+<a href="https://wa.me/573116608217" class="whatsapp" target="_blank">WhatsApp</a>
+
+<script src="./js/main.js"></script>
 </body>
 </html>
