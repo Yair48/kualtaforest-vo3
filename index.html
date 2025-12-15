@@ -1,89 +1,445 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>CO₂ KUALTA | Soluciones reales para el planeta</title>
-  <meta name="description" content="Bonos de carbono, huella y compensación de carbono, y donación de árboles con impacto real.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <title>CO₂ KUALTA | Bonos de carbono y siembra de árboles en Colombia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="CO₂ KUALTA conecta tu aporte con bosques reales en Colombia. Genera bonos de carbono, compensa tu huella y siembra árboles nativos en territorios estratégicos." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CO₂ KUALTA | Bonos de carbono y bosques vivos" />
+  <meta property="og:description" content="Compensa tu huella de carbono y ayuda a proteger bosques reales en Colombia con CO₂ KUALTA." />
+  <meta property="og:image" content="https://kualtaforest.org/img/hero-bosque.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kualtaforest.org/" />
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="estilos.css" />
 </head>
-
 <body>
-
-<header class="nav">
-  <div class="container nav-inner">
-    <img src="./images/logo-co2kualta.png" class="logo" alt="CO₂ KUALTA">
-    <nav>
-      <a href="#servicios">Servicios</a>
-      <a href="#proceso">Proceso</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contacto" class="btn-sm">Contacto</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="hero-content reveal">
-    <h1>Desde la raíz, estructuramos soluciones reales para el planeta</h1>
-    <p>Bonos de carbono · Huella y compensación · Donación de árboles con impacto verificable</p>
-    <a href="#contacto" class="btn">Evaluar mi caso</a>
-  </div>
-</section>
-
-<section id="servicios" class="section">
-  <h2 class="reveal">Servicios</h2>
-  <div class="cards">
-    <div class="card reveal">
-      <h3>Bonos de carbono</h3>
-      <p>Para predios y propietarios con viabilidad técnica real.</p>
-      <a href="./bonos-carbono.html">Ver más →</a>
+  <!-- BARRA SUPERIOR -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-badge">Proyecto piloto 2025</div>
+      <p class="topbar-text">Bosques reales en la Serranía del Perijá y Sierra Nevada de Santa Marta.</p>
     </div>
-    <div class="card reveal">
-      <h3>Huella & compensación</h3>
-      <p>Soluciones para empresas alineadas con estándares ESG.</p>
-      <a href="./huella-compensacion.html">Ver más →</a>
+  </header>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="índice.html" class="nav-logo">
+        <img src="img/logo-co2kualta.png" alt="Logo CO2 KUALTA" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#bonos-carbono">Bonos de carbono</a></li>
+        <li><a href="#siembra-arbol">Siembra un árbol</a></li>
+        <li><a href="#diagnostico">Diagnóstico gratuito</a></li>
+        <li><a href="bonos.html">Para grandes predios</a></li>
+      </ul>
+      <a href="#cta-pagos" class="nav-cta">Quiero empezar</a>
     </div>
-    <div class="card reveal">
-      <h3>Donar un árbol</h3>
-      <p>Aporte ambiental trazable para personas y empresas.</p>
-      <a href="./donar-arbol.html">Ver más →</a>
+  </nav>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text fade-up">
+          <h1>Convierte tu huella de carbono en bosques vivos en Colombia.</h1>
+          <p class="hero-subtitle">
+            Con CO₂ KUALTA conectas tu aporte con proyectos reales de conservación, 
+            reforestación y generación de bonos de carbono en territorios estratégicos.
+          </p>
+          <div class="hero-actions">
+            <a href="#cta-pagos" class="btn btn-primary">Compensar mi huella</a>
+            <a href="#siembra-arbol" class="btn btn-secondary">Siembrar un árbol</a>
+          </div>
+          <div class="hero-trust">
+            <span class="chip">Bosques verificados en campo</span>
+            <span class="chip">Reportes anuales de impacto</span>
+          </div>
+        </div>
+        <div class="hero-media fade-up">
+          <div class="hero-main-image">
+            <img src="img/hero-bosque.jpg" alt="Bosque verde representando los proyectos de CO2 KUALTA" loading="lazy">
+          </div>
+          <div class="hero-secondary">
+            <figure class="hero-photo">
+              <img src="img/arbol-ceiba.jpg" alt="Árbol nativo de gran tamaño en bosque tropical" loading="lazy">
+              <figcaption>Árbol centenario en zona de influencia de CO₂ KUALTA.</figcaption>
+            </figure>
+            <figure class="hero-photo">
+              <img src="img/proyecto-bonos.jpg" alt="Proyecto de bonos de carbono de CO2 KUALTA" loading="lazy">
+              <figcaption>Modelo de proyecto de bonos de carbono para grandes predios.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CÓMO FUNCIONA -->
+    <section id="como-funciona" class="section">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2>Cómo funciona CO₂ KUALTA</h2>
+          <p>
+            Diseñamos, registramos y operamos proyectos de carbono y restauración ecológica
+            para que tu aporte se convierta en resultados medibles, trazables y verificables.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card fade-up">
+            <span class="step-number">1</span>
+            <h3>Diagnóstico de tu huella o predio</h3>
+            <p>
+              Calculamos tu huella de carbono o el potencial de captura de tu finca,
+              identificando área disponible, tipo de ecosistema y escenarios de ingreso.
+            </p>
+          </article>
+
+          <article class="step-card fade-up">
+            <span class="step-number">2</span>
+            <h3>Diseño del proyecto y siembra</h3>
+            <p>
+              Definimos especies nativas, densidades de siembra, esquema de monitoreo y
+              modelo de negocio (bonos de carbono, conservación, restauración productiva).
+            </p>
+          </article>
+
+          <article class="step-card fade-up">
+            <span class="step-number">3</span>
+            <h3>Certificación y generación de bonos</h3>
+            <p>
+              Estructuramos el registro en estándares reconocidos y acompañamos la
+              medición periódica para generar bonos de carbono de calidad.
+            </p>
+          </article>
+
+          <article class="step-card fade-up">
+            <span class="step-number">4</span>
+            <h3>Reporte y trazabilidad para ti</h3>
+            <p>
+              Recibes certificados digitales, mapas, fotografías de campo y reportes anuales
+              con el avance de tu bosque y el impacto generado.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BONOS DE CARBONO -->
+    <section id="bonos-carbono" class="section section-alt">
+      <div class="container bonos-grid">
+        <div class="bonos-text fade-up">
+          <h2>Bonos de carbono para fincas y territorios desde 50 hasta 1.000 ha.</h2>
+          <p>
+            Si eres dueño de finca, comunidad o empresa con áreas de bosque, CO₂ KUALTA
+            se convierte en tu aliado técnico para estructurar proyectos de carbono
+            sólidos, bancables y con potencial de ingresos en dólares.
+          </p>
+
+          <ul class="checklist">
+            <li>Diseño técnico y modelación de captura de carbono.</li>
+            <li>Registro del proyecto en estándares reconocidos.</li>
+            <li>Búsqueda de compradores y negociación de bonos.</li>
+            <li>Esquemas de reparto justos y transparentes.</li>
+          </ul>
+
+          <div class="bonos-cta">
+            <a href="bonos.html" class="btn btn-primary">Ver detalles para grandes predios</a>
+            <p class="tagline">Meta 2025: llegar a 1.000 ha en diseño y registro.</p>
+          </div>
+        </div>
+        <div class="bonos-media fade-up">
+          <figure class="hero-photo">
+            <img src="img/arbol-persona.jpg" alt="Persona observando un bosque conservado gracias a bonos de carbono" loading="lazy">
+            <figcaption>Alianzas con propietarios que deciden proteger sus bosques.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIEMBRA UN ÁRBOL (MENÚDEO) -->
+    <section id="siembra-arbol" class="section">
+      <div class="container">
+        <div class="section-header fade-up">
+          <h2>Siembra un árbol y deja tu huella en Colombia</h2>
+          <p>
+            Para personas, familias y pequeñas empresas que quieren comenzar con un aporte
+            concreto: siembra de árboles nativos con certificado digital y georreferenciación.
+          </p>
+        </div>
+
+        <div class="arbol-grid">
+          <article class="arbol-card fade-up">
+            <h3>🌱 Paquete “Raíz” – 1 árbol</h3>
+            <p>Ideal para regalos, celebraciones y primeros pasos en compensación.</p>
+            <ul class="bullets">
+              <li>1 árbol nativo sembrado en proyectos CO₂ KUALTA.</li>
+              <li>Certificado digital con coordenadas aproximadas.</li>
+              <li>Foto de la zona de siembra en el primer reporte anual.</li>
+            </ul>
+          </article>
+
+          <article class="arbol-card fade-up">
+            <h3>🌿 Paquete “Bosque” – 10 árboles</h3>
+            <p>Perfecto para empresas pequeñas o familias que quieren ir más allá.</p>
+            <ul class="bullets">
+              <li>10 árboles nativos en áreas priorizadas.</li>
+              <li>Reporte anual con resumen de impacto.</li>
+              <li>Mención opcional en muro digital de aliados.</li>
+            </ul>
+          </article>
+
+          <article class="arbol-card fade-up">
+            <h3>🌳 Paquete “Territorio” – 50+ árboles</h3>
+            <p>Para quienes quieren consolidar un pequeño bosque o memorial ecológico.</p>
+            <ul class="bullets">
+              <li>Desde 50 árboles con diseño de parche forestal.</li>
+              <li>Acompañamiento para co-crear nombre del bosque.</li>
+              <li>Posibilidad de visitas guiadas bajo agenda.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIAGNÓSTICO -->
+    <section id="diagnostico" class="section section-alt">
+      <div class="container diag-grid">
+        <div class="diag-text fade-up">
+          <h2>Solicita tu diagnóstico gratuito</h2>
+          <p>
+            Cuéntanos brevemente quién eres y qué tipo de aporte quieres hacer.
+            Con eso preparamos una propuesta a tu medida: bonos de carbono,
+            conservación, restauración o campañas de siembra.
+          </p>
+          <p class="diag-note">
+            ⏱ Respondemos normalmente en menos de 24 horas hábiles.
+          </p>
+        </div>
+
+        <form class="diag-form fade-up" action="https://formsubmit.co/" method="POST">
+          <!-- NOTA: reemplaza el correo de FormSubmit por el que usarás o conecta tu propio backend -->
+          <div class="form-row">
+            <label for="nombre">Nombre completo*</label>
+            <input id="nombre" name="nombre" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Correo electrónico*</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="whatsapp">WhatsApp (con indicativo)</label>
+            <input id="whatsapp" name="whatsapp" type="tel" />
+          </div>
+
+          <div class="form-row">
+            <label for="rol">Soy...</label>
+            <select id="rol" name="rol">
+              <option>Dueño(a) de finca</option>
+              <option>Empresa</option>
+              <option>Persona natural</option>
+              <option>Comunidad / Cabildo / Resguardo</option>
+              <option>ONG / Fundación</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="ubicacion">Ubicación del predio o ciudad</label>
+            <input id="ubicacion" name="ubicacion" type="text" />
+          </div>
+
+          <div class="form-row">
+            <label for="hectareas">Área disponible (hectáreas aproximadas)</label>
+            <input id="hectareas" name="hectareas" type="text" />
+          </div>
+
+          <div class="form-row">
+            <label for="interes">¿Qué te interesa principalmente?</label>
+            <select id="interes" name="interes">
+              <option>Bonos de carbono para mi predio</option>
+              <option>Compensar huella de mi empresa</option>
+              <option>Siembra de árboles (regalos / campañas)</option>
+              <option>Otro (especificar en el mensaje)</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="mensaje">Cuéntanos un poco más</label>
+            <textarea id="mensaje" name="mensaje" rows="3" placeholder="Ej: tengo 300 ha de bosque en la Serranía del Perijá..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Enviar diagnóstico</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- CTA PAGOS -->
+    <section id="cta-pagos" class="section cta-section">
+      <div class="container cta-inner fade-up">
+        <div class="cta-text">
+          <h2>Comienza hoy mismo con un aporte concreto.</h2>
+          <p>
+            Para el piloto actual, habilitamos un aporte único de 
+            <strong>COP $497.000</strong> con el que apoyas la siembra y protección
+            de árboles nativos en proyectos CO₂ KUALTA.
+          </p>
+          <p class="cta-small">
+            Recibirás correo de confirmación, datos del proyecto en el que participas
+            y tu certificado digital cuando cerremos la primera etapa de siembra.
+          </p>
+        </div>
+
+        <div class="cta-payments">
+          <h3>Elige tu método de pago</h3>
+
+          <!-- Wompi -->
+          <a class="btn btn-primary btn-block" href="https://checkout.wompi.co/l/sVgCFX" target="_blank" rel="noopener">
+            Pagar con tarjeta, PSE o Nequi (Wompi)
+          </a>
+
+          <!-- PayPal -->
+          <div class="paypal-wrapper">
+            <p class="paypal-label">Pagos internacionales con PayPal (USD):</p>
+            <!-- Código que nos compartiste -->
+            <div>
+              <style>.pp-ZCK67D7C3TZ6L{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
+              <form action="https://www.paypal.com/ncp/payment/ZCK67D7C3TZ6L" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
+                <input class="pp-ZCK67D7C3TZ6L" type="submit" value="Comprar ahora" />
+                <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="Medios de pago PayPal" />
+                <section style="font-size: 0.75rem;"> Con la tecnología de 
+                  <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/>
+                </section>
+              </form>
+            </div>
+          </div>
+
+          <p class="cta-footnote">
+            ¿Necesitas factura empresarial o quieres hablar antes de aportar? 
+            Escríbenos directo por WhatsApp en el botón flotante.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">CO₂ KUALTA</p>
+        <p class="footer-text">Desde la raíz, tejemos el futuro del planeta.</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>Contacto</h4>
+          <p>WhatsApp: +57 311 660 8217</p>
+          <p>Email: co2kualta@sosing.com.co</p>
+          <p>Región base: Cesar, Colombia.</p>
+        </div>
+        <div>
+          <h4>Enlaces</h4>
+          <a href="#como-funciona">Cómo funciona</a>
+          <a href="#bonos-carbono">Bonos de carbono</a>
+          <a href="#siembra-arbol">Siembra un árbol</a>
+          <a href="bonos.html">Para grandes predios</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year"></span> CO₂ KUALTA. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a href="https://wa.me/573116608217?text=Hola%20CO2%20KUALTA,%20quiero%20información%20sobre%20bonos%20de%20carbono%20y%20siembra%20de%20árboles." 
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    💬
+  </a>
+
+  <!-- POPUP EXIT INTENT -->
+  <div id="exit-popup" class="popup-backdrop">
+    <div class="popup">
+      <button class="popup-close" aria-label="Cerrar">×</button>
+      <h3>Antes de irte, llévate esta guía gratis</h3>
+      <p>
+        Descarga la checklist <strong>“7 pasos para convertir tu finca en un bosque que genera dólares”</strong>.
+      </p>
+      <form class="popup-form">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <button type="submit" class="btn btn-primary btn-block">Quiero la guía</button>
+      </form>
+      <p class="popup-small">
+        *Pronto conectaremos esta guía con nuestro sistema de envíos. Por ahora, envíanos tu correo 
+        y te la compartimos manualmente.
+      </p>
     </div>
   </div>
-</section>
 
-<section id="proceso" class="section alt">
-  <h2 class="reveal">Proceso de trabajo</h2>
-  <ol class="steps">
-    <li class="reveal">Diagnóstico</li>
-    <li class="reveal">Evaluación técnica</li>
-    <li class="reveal">Implementación</li>
-    <li class="reveal">Seguimiento</li>
-  </ol>
-</section>
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CO2 KUALTA",
+    "url": "https://kualtaforest.org",
+    "logo": "https://kualtaforest.org/img/logo-co2kualta.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CO",
+      "addressRegion": "Cesar",
+      "addressLocality": "Valledupar"
+    }
+  }
+  </script>
 
-<section id="faq" class="section">
-  <h2 class="reveal">Preguntas frecuentes</h2>
-  <details class="reveal">
-    <summary>¿Mi predio puede aplicar a bonos de carbono?</summary>
-    <p>Depende del uso del suelo, cobertura y riesgos. Se evalúa con diagnóstico previo.</p>
-  </details>
-  <details class="reveal">
-    <summary>¿Las empresas reciben certificado?</summary>
-    <p>Sí, entregamos soportes para compensación y comunicación.</p>
-  </details>
-</section>
+  <script>
+    // Año footer
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-<section id="contacto" class="section alt">
-  <h2 class="reveal">Contacto</h2>
-  <p>Escríbenos por WhatsApp y evaluamos tu caso.</p>
-</section>
+    // Animaciones on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
 
-<a href="https://wa.me/573116608217" class="whatsapp" target="_blank">WhatsApp</a>
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-<script src="./js/main.js"></script>
+    // Pop-up de salida (solo desktop)
+    const popup = document.getElementById('exit-popup');
+    const closePopup = () => popup.classList.remove('visible');
+
+    document.querySelector('.popup-close').addEventListener('click', closePopup);
+    popup.addEventListener('click', (e) => { if (e.target === popup) closePopup(); });
+
+    let popupShown = false;
+    function showPopup() {
+      if (!popupShown && window.innerWidth > 768) {
+        popup.classList.add('visible');
+        popupShown = true;
+      }
+    }
+
+    document.addEventListener('mouseout', (e) => {
+      if (e.clientY < 10) showPopup();
+    });
+  </script>
 </body>
 </html>
